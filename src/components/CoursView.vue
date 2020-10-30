@@ -1,16 +1,19 @@
 <template>
     <div class="flex justify-center">
-    <mon-panier 
+    <div class="w-1/5">
+      <mon-panier 
       :mesCours="mesCours"
+      @change-component="changeSelectedComponent"
     >
     </mon-panier>
+    </div>
 
-    <div>
-    <unCours-card
-    v-for="(unCours, index) in ensemble.cours"
-    :key="index"
-    :unCours="unCours"
-    @ajout-uncours="ajoutCoursPanier"
+    <div class="w-4/5">
+      <unCours-card
+      v-for="(unCours, index) in ensemble.cours"
+      :key="index"
+      :unCours="unCours"
+      @ajout-uncours="ajoutCoursPanier"
     >
     </unCours-card>
     </div>
@@ -24,7 +27,7 @@ import MonPanier from '../components/MonPanier.vue'
 
 
 export default {
-    name: 'unCours-view',
+  name: 'unCours-view',
   components: {
     unCoursCard,
     MonPanier
@@ -39,7 +42,8 @@ export default {
     methods: {
       ajoutCoursPanier(unCours) {
         this.mesCours.push(unCours)
-      }
+        this.$emit('child-event', unCours)
+      },
     }
 }
 

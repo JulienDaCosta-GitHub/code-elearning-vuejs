@@ -2,47 +2,47 @@
     "cours": [
       {
         "nom": "React - Introduction",
-        "durée": "1h",
-        "difficulté": "Facile",
+        "duree": "1h",
+        "difficulte": "Facile",
         "dateCreation": "29/10/2020",
         "description": "Cours d'introduction pour débutant expliquant les bases de la bibliothèque React.",
-        "prix": "3 €",
+        "prix": "3",
         "image": "react.png"
       },
       {
         "nom": "Vue.js - Introduction",
-        "durée": "40min",
-        "difficulté": "Facile",
+        "duree": "40min",
+        "difficulte": "Facile",
         "dateCreation": "20/06/2020",
         "description": "Cours d'introduction pour débutant expliquant les bases du framework Vue.js.",
-        "prix": "2 €",
+        "prix": "2",
         "image": "vuejs.png"
       },
       {
         "nom": "Angular - Introduction",
-        "durée": "1h",
-        "difficulté": "Facile",
+        "duree": "1h",
+        "difficulte": "Facile",
         "dateCreation": "02/04/2020",
         "description": "Cours d'introduction pour débutant expliquant les bases du framework Angular.",
-        "prix": "3 €",
+        "prix": "3",
         "image": "angular.png"
       },
       {
         "nom": "Symfony - Création d'une boutique",
-        "durée": "2h15",
-        "difficulté": "Moyen",
+        "duree": "2h15",
+        "difficulte": "Difficile",
         "dateCreation": "29/10/2020",
         "description": "Dans ce cours, nous vous expliquerons comment réaliser une boutique à l'aide de Symfony.",
-        "prix": "5 €",
+        "prix": "5",
         "image": "symfony.png"
       },
       {
         "nom": "Three.js - Réalisation de pyramides",
-        "durée": "1h",
-        "difficulté": "facile",
+        "duree": "1h",
+        "difficulte": "Moyen",
         "dateCreation": "15/08/2020",
         "description": "Nous évoquerons dans ce cours comment réaliser un environnement avec des formes géométriques en Three.js, comme des pyramides.",
-        "prix": "4 €",
+        "prix": "4",
         "image": "threejs.png"
       }
     ]

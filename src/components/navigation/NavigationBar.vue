@@ -1,6 +1,6 @@
 <template>
     <div class="bg-orange-400 text-center p-5 ">
-        <a class="pr-2 font-bold white" href="#" @click="changeComponent('cours-view')">Tous les cours</a> |
+        <a class="pr-2 font-bold white" href="#" @click="changeComponent('cours-view')">Tous les cours</a> <span>|</span>
         <a class="pl-2 font-bold" href="#" @click="changeComponent('mesCours-list')">Mes cours</a>
     </div>
 </template>
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 
-a {
+a, span {
     color: white;
 }
 

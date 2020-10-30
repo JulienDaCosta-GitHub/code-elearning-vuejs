@@ -10,6 +10,7 @@
         <component
           :is="selectedComponent"
           v-bind="currentProps"
+          @child-event="mesCoursMaj"
           >
 
           </component>
@@ -32,13 +33,14 @@ export default {
   },
   data() {
     return {
-      selectedComponent: 'cours-view'
+      selectedComponent: 'cours-view',
+      coursPanier: []
     }
   },
   computed: {
     currentProps() {
       if(this.selectedComponent == "mesCours-list") {
-      return { mesCours: this.selectedComponent }
+      return { mesCours: this.coursPanier }
       }
       return false
     }
@@ -46,6 +48,9 @@ export default {
   methods: {
     changeSelectedComponent(value) {
       this.selectedComponent = value
+    },
+    mesCoursMaj(value) {
+      this.coursPanier.push(value)
     }
   }
 }
