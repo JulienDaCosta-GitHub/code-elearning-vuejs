@@ -12,7 +12,7 @@
         class="border border-black my-4 p-2"
       >
         <h2 class="text-lg font-bold">{{ unCours.nom }}</h2>
-        <img class="mb-5" :src="require('../assets/img/' + unCours.image)" />
+        <img class="mb-5" :src="require('../assets/img/' + unCours.image)" alt="" />
         <h2><span>Difficulté :</span> {{ unCours.difficulte }}</h2>
         <p><span>Durée : </span> {{ unCours.duree }}</p>
         <p><span>Description :</span> {{ unCours.description }}</p>

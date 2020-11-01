@@ -6,7 +6,7 @@
     >
         <div>
             <h1 class="text-lg font-bold">{{ coursMajuscule }}</h1>
-            <img class="mb-5" :src="require('../assets/img/' + unCours.image)" />
+            <img class="mb-5" :src="require('../assets/img/' + unCours.image)" alt="" />
             <h2><span>Difficulté :</span> {{ unCours.difficulte }}</h2>
             <p><span>Durée : </span> {{ unCours.duree }}</p>
             <p><span>Description :</span> {{ unCours.description }}</p>

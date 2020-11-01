@@ -14,7 +14,7 @@
             <ul>
                 <li v-for="unCours in mesCours"
                     :key="unCours.nom"
-                >{{unCours.nom}} (Prix: {{unCours.prix}}€)
+                >{{unCours.nom}} (Prix : {{unCours.prix}}€)
                 </li>
             </ul>
         </div>
